@@ -4,10 +4,9 @@ drop table if exists q1 cascade;
 -- You must not change this table definition.
 
 create table q1(
-year INT,
-countryName VARCHAR(50),
-voteRange VARCHAR(20),
-partyName VARCHAR(100)
+id VARCHAR(100),
+first_name VARCHAR(20),
+last_name VARCHAR(100)
 );
 
 INSERT INTO q1

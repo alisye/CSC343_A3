@@ -1,0 +1,245 @@
+csc343h-alisye55=> \i runner.txt
+-- Loading schema and data:
+psql:schema.sql:1: NOTICE:  drop cascades to 60 other objects
+DETAIL:  drop cascades to table quizschema.student
+drop cascades to table quizschema.class
+drop cascades to table quizschema.enrolled
+drop cascades to table quizschema.questions
+drop cascades to table quizschema.num_answer
+drop cascades to table quizschema.tf_answer
+drop cascades to table quizschema.mc_answer
+drop cascades to table quizschema.quiz
+drop cascades to table quizschema.quiz_question
+drop cascades to table quizschema.tf_response
+drop cascades to table quizschema.num_response
+drop cascades to table quizschema.mc_response
+drop cascades to table quizschema.q1
+drop cascades to table quizschema.q2
+drop cascades to view quizschema.num_ans_count
+drop cascades to view quizschema.mc_ans_count
+drop cascades to view quizschema.all_qs
+drop cascades to table quizschema.q3
+drop cascades to view quizschema.in_class
+drop cascades to view quizschema.is_res_tf
+drop cascades to view quizschema.is_res_num
+drop cascades to view quizschema.is_res_mc
+drop cascades to view quizschema.tf_correct
+drop cascades to view quizschema.num_correct
+drop cascades to view quizschema.num_correct2
+drop cascades to view quizschema.mc_correct
+drop cascades to view quizschema.mc_correct2
+drop cascades to view quizschema.all_correct_tab
+drop cascades to view quizschema.total_grade
+drop cascades to view quizschema.total_quiz
+drop cascades to view quizschema.final
+drop cascades to table quizschema.q4
+drop cascades to view quizschema.in_class1
+drop cascades to view quizschema.is_res_tf1
+drop cascades to view quizschema.is_res_num1
+drop cascades to view quizschema.is_res_mc1
+drop cascades to view quizschema.all_resp1
+drop cascades to view quizschema.all_poss1
+drop cascades to view quizschema.act1
+drop cascades to view quizschema.inter1
+drop cascades to table quizschema.q5
+drop cascades to view quizschema.in_class2
+drop cascades to view quizschema.is_res_tf2
+drop cascades to view quizschema.is_res_num2
+drop cascades to view quizschema.is_res_mc2
+drop cascades to view quizschema.tf_correct2
+drop cascades to view quizschema.num_correct3
+drop cascades to view quizschema.num_correct4
+drop cascades to view quizschema.mc_correct3
+drop cascades to view quizschema.mc_correct4
+drop cascades to view quizschema.all_correct_tab34
+drop cascades to view quizschema.total_correct
+drop cascades to view quizschema.total_wrong
+drop cascades to view quizschema.total_wrong2
+drop cascades to view quizschema.all_resp2
+drop cascades to view quizschema.all_poss2
+drop cascades to view quizschema.act2
+drop cascades to view quizschema.inter2
+drop cascades to view quizschema.total_none
+drop cascades to view quizschema.final2
+DROP SCHEMA
+CREATE SCHEMA
+SET
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+-- Query 1:
+psql:q1.sql:2: NOTICE:  table "q1" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+INSERT 0 6
+     id     | first_name | last_name
+------------+------------+------------
+ 0998801234 | Lena       | Headey
+ 0010784522 | Peter      | Dinklage
+ 0997733991 | Emillia    | Clarke
+ 5555555555 | Kit        | Harrington
+ 1111111111 | Sophie     | Turner
+ 2222222222 | Massie     | Williams
+(6 rows)
+
+-- Query 2:
+psql:q2.sql:2: NOTICE:  table "q2" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 5
+ id  |                                                                        text                                                                        | hint_num
+-----+----------------------------------------------------------------------------------------------------------------------------------------------------+----------
+ 790 | During the War of 1812 the Americans burned down the Parliament Buildings in York (now Toronto). What did the British and Canadians do in return?  |        0
+ 601 | During the "Quiet Revolution," Quebec experienced rapid change. In what decade did this occur? (Enter the year that began the decade, e.g., 1840.) |        3
+ 625 | What is the Underground Railroad?                                                                                                                  |        3
+ 782 | What do you promise when you take the oath of citizenship?                                                                                         |        1
+ 566 | The Prime Minister, Justin Trudeau, is Canada's Head of State                                                                                      |
+(5 rows)
+
+-- Query 3:
+psql:q3.sql:2: NOTICE:  table "q3" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 4
+ student_no | last_name  | grade
+------------+------------+-------
+ 0998801234 | Headey     |    38
+ 0010784522 | Dinklage   |   100
+ 0997733991 | Clarke     |    63
+ 5555555555 | Harrington |    13
+(4 rows)
+
+-- Query 4:
+psql:q4.sql:2: NOTICE:  table "q4" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 6
+ student_id | question_id |                                                                        text
+------------+-------------+----------------------------------------------------------------------------------------------------------------------------------------------------
+ 5555555555 |         625 | What is the Underground Railroad?
+ 1111111111 |         625 | What is the Underground Railroad?
+ 1111111111 |         601 | During the "Quiet Revolution," Quebec experienced rapid change. In what decade did this occur? (Enter the year that began the decade, e.g., 1840.)
+ 1111111111 |         790 | During the War of 1812 the Americans burned down the Parliament Buildings in York (now Toronto). What did the British and Canadians do in return?
+ 1111111111 |         566 | The Prime Minister, Justin Trudeau, is Canada's Head of State
+ 5555555555 |         601 | During the "Quiet Revolution," Quebec experienced rapid change. In what decade did this occur? (Enter the year that began the decade, e.g., 1840.)
+(6 rows)
+
+-- Query 5:
+psql:q5.sql:2: NOTICE:  table "q5" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+INSERT 0 4
+ question_id | correct | wrong | no_ans
+-------------+---------+-------+--------
+         790 |       2 |     2 |      1
+         566 |       3 |     1 |      1
+         625 |       2 |     1 |      2
+         601 |       2 |     1 |      2
+(4 rows)
+

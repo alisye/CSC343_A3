@@ -2,11 +2,9 @@ drop schema if exists quizschema cascade;
 CREATE schema quizschema;
 set search_path to quizschema;
 
---
---
+--The constraint that only students enrolledin the class that was assigned a quiz can answer question for that quiz could not be enforced
 
---
---
+--I choose not to enforce the room -> teacher FD 
 
 CREATE TABLE student(
 	id VARCHAR(100) primary key,

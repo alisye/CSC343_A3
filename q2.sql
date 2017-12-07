@@ -9,9 +9,22 @@ text VARCHAR(1000),
 hint_num int
 );
 
+CREATE VIEW num_ans_count AS
+SELECT questions.id, text, count(hint) as hint_count
+FROM questions JOIN num_answer ON id = num_answer.question_id
+GROUP BY questions.id;
 
+
+CREATE VIEW mc_ans_count AS
+SELECT questions.id, text, count(hint) as hint_count
+FROM questions JOIN mc_answer ON id = mc_answer.question_id
+GROUP BY questions.id;
+
+
+CREATE VIEW all_qs AS
+(SELECT * FROM num_ans_count) UNION (SELECT * FROM mc_ans_count);
 
 
 INSERT INTO q2
-SELECT id, first_name, last_name
-FROM student;
+SELECT questions.id, questions.text, hint_count
+FROM questions LEFT JOIN all_qs ON questions.id = all_qs.id;

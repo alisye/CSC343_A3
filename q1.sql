@@ -12,3 +12,5 @@ last_name VARCHAR(100)
 INSERT INTO q1
 SELECT id, first_name, last_name
 FROM student;
+
+SELECT * FROM q1;

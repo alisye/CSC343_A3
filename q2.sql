@@ -28,3 +28,6 @@ CREATE VIEW all_qs AS
 INSERT INTO q2
 SELECT questions.id, questions.text, hint_count
 FROM questions LEFT JOIN all_qs ON questions.id = all_qs.id;
+
+
+SELECT * FROM q2;

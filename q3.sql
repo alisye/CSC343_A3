@@ -94,3 +94,6 @@ FROM (total_grade JOIN student ON student_id = id), total_quiz;
 INSERT INTO q3
 SELECT student_id, last_name, grade
 FROM final;
+
+
+SELECT * FROM q3;
